@@ -1,8 +1,8 @@
 {
-	"name": "matteocacciola/php-trello-api",
+	"name": "pgrenaud/php-trello-api",
 	"type": "library",
 	"description": "Trello API v2 client",
-	"homepage": "https://github.com/matteocacciola/php-trello-api",
+	"homepage": "https://github.com/pgrenaud/php-trello-api",
 	"keywords": ["trello"],
 	"license": "MIT",
 	"authors": [
