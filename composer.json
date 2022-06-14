@@ -1,8 +1,8 @@
 {
-	"name": "pgrenaud/php-trello-api",
+	"name": "pavlokrostylov/php-trello-api",
 	"type": "library",
 	"description": "Trello API v2 client",
-	"homepage": "https://github.com/pgrenaud/php-trello-api",
+	"homepage": "https://github.com/pavlokrostylov/php-trello-api",
 	"keywords": ["trello"],
 	"license": "MIT",
 	"authors": [
@@ -13,6 +13,10 @@
                 {
 			"name": "Matteo Cacciola",
 			"email": "matteo.cacciola@gmail.com"
+		},
+		{
+			"name": "Pavlo Krostylov",
+			"email": "gruzyn@gmail.com"
 		}
 	],
 	"require": {
