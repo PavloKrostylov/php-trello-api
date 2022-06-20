@@ -42,6 +42,8 @@ API Index
     * [SavedSearches](Member/SavedSearches.md)
 * [Notification](Notification.md)
 * [Organization](Organization.md)
+    * [Boards](Organization/Boards.md)
+    * [Members](Organization/Members.md)
 * [Token](Token.md)
     * [Webhooks](Token/Webhooks.md)
 * [Webhook](Webhook.md)

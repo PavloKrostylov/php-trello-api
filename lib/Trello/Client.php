@@ -115,6 +115,8 @@ class Client implements ClientInterface
                 break;
             case 'list':
             case 'lists':
+            case 'cardlist':
+            case 'cardlists':
                 $api = new Api\Cardlist($this);
                 break;
             case 'member':
