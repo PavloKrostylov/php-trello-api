@@ -40,6 +40,7 @@ API Index
     * [Notifications](Member/Notifications.md)
     * [Organizations](Member/Organizations.md)
     * [SavedSearches](Member/SavedSearches.md)
+* [Label](Label.md)
 * [Notification](Notification.md)
 * [Organization](Organization.md)
     * [Boards](Organization/Boards.md)

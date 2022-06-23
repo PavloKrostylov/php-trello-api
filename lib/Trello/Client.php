@@ -139,6 +139,9 @@ class Client implements ClientInterface
             case 'webhooks':
                 $api = new Api\Webhook($this);
                 break;
+            case 'label':
+            case 'labels':
+                $api = new Api\Label($this);
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api called: "%s"', $name));
         }
