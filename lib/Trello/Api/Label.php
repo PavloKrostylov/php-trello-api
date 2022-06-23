@@ -68,6 +68,10 @@ class Label extends AbstractApi
     public function create(array $params = [])
     {
         $this->validateRequiredParameters(['idBoard', 'color', 'name'], $params);
+		
+		if ((isset($params['color']) && !empty($params['color'])) && !in_array($params['color'], Label::$colors)) {
+			throw new InvalidArgumentException(sprintf('Wrong label color "%s". Allowed: '.implode(', ', Label::$colors), $label));
+		}
 
         return $this->post($this->getPath(), $params);
     }

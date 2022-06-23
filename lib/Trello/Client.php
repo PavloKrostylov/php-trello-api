@@ -142,6 +142,7 @@ class Client implements ClientInterface
             case 'label':
             case 'labels':
                 $api = new Api\Label($this);
+                break;
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api called: "%s"', $name));
         }
