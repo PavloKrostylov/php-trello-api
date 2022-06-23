@@ -13,7 +13,7 @@ $api->cards()->labels()->create(string $id, array $params)
 
 ### Add a given card&#039;s label by label ID
 ```php
-$api->cards()->labels()->add(string $id, array $labelId)
+$api->cards()->labels()->attach(string $id, string $labelId)
 ```
 
 ### Remove a given label from a given card by label color name
@@ -23,6 +23,6 @@ $api->cards()->labels()->remove(string $id, string $label)
 
 ### Remove a given label from a given card by label ID
 ```php
-$api->cards()->labels()->delete(string $id, string $labelId)
+$api->cards()->labels()->detach(string $id, string $labelId)
 ```
 

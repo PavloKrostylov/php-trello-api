@@ -52,9 +52,7 @@ class Labels extends AbstractApi
      * @throws InvalidArgumentException If a label does not exist
      */
     public function create($id, array $params = [])
-    {
-        $this->validateRequiredParameters(['color'], $params);		
-		
+    {		
 		if ((isset($params['color']) && !empty($params['color'])) && !in_array($params['color'], Label::$colors)) {
 			throw new InvalidArgumentException(sprintf('Wrong label color "%s". Allowed: '.implode(', ', Label::$colors), $label));
 		}
@@ -75,7 +73,7 @@ class Labels extends AbstractApi
      *
      * @throws InvalidArgumentException If a label does not exist
      */
-    public function add($id, $labelId)
+    public function attach($id, $labelId)
     {
         return $this->post($this->getPath($id).'/idLabels', ['value' => $labelId]);
     }
@@ -111,8 +109,8 @@ class Labels extends AbstractApi
      *
      * @throws InvalidArgumentException If a label does not exist
      */
-    public function delete($id, $labelId)
+    public function detach($id, $labelId)
     {
-        return $this->delete($this->getPath($id) . '/idLabels/' . rawurlencode($label));
+        return $this->delete($this->getPath($id) . '/idLabels/' . rawurlencode($labelId));
     }
 }
