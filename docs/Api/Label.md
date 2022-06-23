@@ -16,3 +16,13 @@ $api->labels()->create(array $params)
 $api->labels()->update(string $id, array $params)
 ```
 
+### Update a label name
+```php
+$api->labels()->setName(string $id, string $name)
+```
+
+### Update a label color
+```php
+$api->labels()->setColor(string $id, string $color)
+```
+

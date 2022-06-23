@@ -13,11 +13,11 @@ setName($name)
 
 ### Get color
 ```php
-getColor($color)
+getColor()
 ```
 
 ### Set color
 ```php
-setColor()
+setColor($color)
 ```
 
